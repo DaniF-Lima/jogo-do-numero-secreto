@@ -3,7 +3,6 @@ let numeroLimite = 10;
 let numeroSecreto = gerarNumeroAleatorio();
 let tentativas = 1;
 
-// para evitar a repetição de código use:
 function exibirTextoNaTela(tag, texto) {
     let campo = document.querySelector(tag);
     campo.innerHTML = texto;
@@ -48,7 +47,6 @@ function gerarNumeroAleatorio() {
     if (listaDeNumerosSorteados.includes(numeroEscolhido)) {
         return gerarNumeroAleatorio();
     } else {
-        //push adiciona um item ao final da lista:
         listaDeNumerosSorteados.push(numeroEscolhido);
         console.log(listaDeNumerosSorteados);
         return numeroEscolhido;
